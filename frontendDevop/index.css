@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    /* background: rgba(11,222,255,1); */
+    background-color: #00689B;
+    font-family: 'Muli', sans-serif;
+    
+}
+.header {
+    /* background: linear-gradient(to bottom, rgba(0,103,155,1) 0%, rgba(6,173,214,1) 70%, rgba(11,222,255,1) 100%); */
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    /* Enviamos al otro extremo la lista */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu:hover ul, el:hover{
+    display: block;
+}
+.header__menu li{
+    margin: 10px 0;
+}
+.header__menu li a{ 
+    color:white;
+    text-decoration: none;   
+}
+.header__menu li a:hover{ 
+    text-decoration: underline;   
+}
+.header__img{
+    width: 160px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.header__menu{
+    margin-right: 30px;
+}
+.header__menu ul{
+    display: none ;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0 0 0 -14px;
+}
+.header__menu--profile{
+    margin-right: 8px;  
+    display: flex;
+    align-items: center;
+}
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+}
+.header__menu--profile p{
+    margin:0;
+    color: white;
+}
