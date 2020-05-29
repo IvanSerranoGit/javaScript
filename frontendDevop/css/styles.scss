@@ -1,3 +1,14 @@
+// uso de variables
+$blanco:white;
+// uso de @extend para codigo que se reutilza mucho
+.flex{
+  display: flex;
+  align-items: center;
+}
+// @mixin flex {
+//   display: flex;
+//   align-items: center;
+// }
 body {
   margin: 0;
   font-family: "Muli", sans-serif;
@@ -6,10 +17,12 @@ body {
 }
 
 .header {
-  align-items: center;
+  // @include flex;
+  @extend .flex;
+  // align-items: center;
   background: transparent;
   color: white;
-  display: flex;
+  // display: flex;
   height: 100px;
   justify-content: space-between;
   top: 0px;
@@ -21,19 +34,18 @@ body {
   margin-top: 20px;
   width: 150px;
 }
-
+// Anidamiento, se usa cuando la clase padre tambien parte de los elementos hijos
 .header__menu {
   margin-right: 30px;
-}
-
-.header__menu ul {
-  display: none;
+  ul{
+    display: none;
   list-style: none;
   margin: 0px 0px 0px -14px;
   padding: 0px;
   position: absolute;
   width: 100px;
   text-align: right;
+  }
 }
 
 .header__menu:hover ul, ul:hover {
@@ -45,7 +57,7 @@ body {
 }
 
 .header__menu li a {
-  color: white;
+  color: $blanco;
   text-decoration: none;
 }
 

@@ -11,16 +11,16 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="../assets/images/2x/Borta.png" alt="LogoBorta">
+        <img tabindex="0" class="header__img" src="../assets/images/2x/Borta.png" alt="LogoBorta">
     </header>
     <section class="login">
         <section class="login__container">
-            <h2>Registrate</h2>
+            <h2 tabindex="0">Registrate</h2>
             <form class="login__container--form" action="">
-                <input class="input input__login" type="text" placeholder="Nombre">
-                <input class="input input__login" type="text" placeholder="correo">
-                <input class="input input__login" type="password" placeholder="contraseña">
-                <input class="input input__login" type="password" placeholder="Ingresa nuevamente tu contraseña">
+                <input aria-label="Nombre" class="input input__login" type="text" placeholder="Nombre">
+                <input aria-label="correo"  class="input input__login" type="text" placeholder="correo">
+                <input aria-label="password" class="input input__login" type="password" placeholder="contraseña">
+                <input aria-label="password" class="input input__login" type="password" placeholder="Ingresa nuevamente tu contraseña">
                 <button class="button">Registrame</button>
             </form>
             <section class="login__container--social--media">
