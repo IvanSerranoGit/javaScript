@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    /* cambiamos de vertical a horizontal nuestro eje */
+    flex-direction: column;
+    font-size: 16px;
+    color: whitesmoke;
+}
+.header{
+    outline: 1px solid #1d3557;
+    background-color: #1d3557;
+    height: 3rem;
+}
+.container{
+    
+    background-color: #457b9d;
+    display: flex;
+    height: inherit;
+}
+.content{
+    outline: 1px solid #457b9d;
+    background-color: #457b9d;
+    flex: 1;
+}
+.aside{
+    outline: 1px solid #e63946;
+    background-color: #e63946;
+    flex: 0 0 25%;
+}
+.footer{
+    background-color: #a8dadc;
+    outline: 1px solid #a8dadc;
+    height: 6rem;
+    /* todo el espacio esta disponible, por eso lo manda hasta abajo */
+    margin-top: auto;
+}
+.menu{
+    display: flex;
+}
+.menu__item{
+    list-style: none;
+    flex:1;
+    outline: 1px solid #457b9d;
+    /* alinear a la par del contenedor, revisar contenedor */
+    line-height: 3rem;
+    text-align: center ;
+    transition: flex .5s;
+}
+.menu__item:hover{
+   flex: 8 ;
+}
